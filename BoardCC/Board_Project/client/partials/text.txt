@@ -1,0 +1,374 @@
+<td width="600">
+                                    <div id="columns" class="column-view-container">
+                                        <div class="column-view-composition">
+                                            <div class="column">
+                                                <ul>
+                                                    <li title="1. Server">1. Server<i class="icon-chevron-right"></i>
+                                                    </li>
+                                                    <li title="2. Router">2. Router<i class="icon-chevron-right"></i>
+                                                    </li>
+                                                    <li title="3. Access Point">3. Access Point<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="4. Switch">4. Switch<i class="icon-chevron-right"></i>
+                                                    </li>
+                                                    <li title="5. ISP">5. ISP<i class="icon-chevron-right"></i></li>
+                                                    <li title="6. Username Login">6. Username Login<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="7. Customer">7. Customer<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="8. สอบถามข้อมูล">8. สอบถามข้อมูล<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="9. เกี่ยวกับบัตร" class="active">9. เกี่ยวกับบัตร<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="10. ประสานงาน">10. ประสานงาน<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="11. สายหลุด">11. สายหลุด<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="12. ติดตั้ง SmartZone">12. ติดตั้ง SmartZone<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="13. Special Square">13. Special Square<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="14. โทรออก">14. โทรออก<i class="icon-chevron-right"></i>
+                                                    </li>
+                                                    <li title="15. Email Support">15. Email Support<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="16. Chat Support">16. Chat Support<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="17. ไม่ได้โอนประเมินคะแนน">17. ไม่ได้โอนประเมินคะแนน<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="18. Smart IT">18. Smart IT<i
+                                                            class="icon-chevron-right"></i></li>
+                                                    <li title="19. TSD">19. TSD<i class="icon-chevron-right"></i></li>
+                                                    <li title="20. Smart CallCenter">20. Smart CallCenter<i
+                                                            class="icon-chevron-right"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+<!--<form action="#" id="form-username2" class="form-horizontal form-bordered">-->
+<!--<div class="form-group">-->
+<!--<div class="col-md-12">-->
+<!--<select id="select_selectsplitter1" class="form-control" size="20">-->
+<!--<optgroup label="Category 1">-->
+<!--<option value="2">Option 2</option>-->
+<!--<option value="3">Option 3</option>-->
+<!--<option value="4">Option 4</option>-->
+<!--<option value="5">Option 5</option>-->
+<!--<option value="6">Option 6</option>-->
+<!--<option value="7">Option 7</option>-->
+<!--<option value="8">Option 8</option>-->
+<!--</optgroup>-->
+<!--<optgroup label="Category 2">-->
+<!--<option value="9">Option 9</option>-->
+<!--<option value="10">Option 10</option>-->
+<!--<option value="11">Option 11</option>-->
+<!--<option value="12">Option 12</option>-->
+<!--<option value="13">Option 13</option>-->
+<!--<option value="14">Option 14</option>-->
+<!--<option value="15">Option 15</option>-->
+<!--<option value="16">Option 16</option>-->
+<!--</optgroup>-->
+<!--<optgroup label="Category 3">-->
+<!--<option value="17">Option 17</option>-->
+<!--<option value="18">Option 18</option>-->
+<!--<option value="19">Option 19</option>-->
+<!--<option value="20">Option 20</option>-->
+<!--<option value="21">Option 21</option>-->
+<!--</optgroup>-->
+<!--</select>-->
+<!--</div>-->
+<!--</div>-->
+<!--</form>-->
+
+<form action="#" id="form_sample_2" class="form-horizontal" novalidate="novalidate">
+                                        <div class="form-body">
+                                            <div class="alert alert-danger display-hide">
+                                                <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
+                                            <div class="alert alert-success display-hide">
+                                                <button class="close" data-close="alert"></button> Your form validation is successful! </div>
+                                            <div class="form-group  margin-top-20">
+                                                <label class="control-label col-md-3">Name
+                                                    <span class="required" aria-required="true"> * </span>
+                                                </label>
+                                                <div class="col-md-4">
+                                                    <div class="input-icon right">
+                                                        <i class="fa"></i>
+                                                        <input type="text" class="form-control" name="name"> </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3">Email
+                                                    <span class="required" aria-required="true"> * </span>
+                                                </label>
+                                                <div class="col-md-4">
+                                                    <div class="input-icon right">
+                                                        <i class="fa"></i>
+                                                        <input type="text" class="form-control" name="email"> </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3">URL
+                                                    <span class="required" aria-required="true"> * </span>
+                                                </label>
+                                                <div class="col-md-4">
+                                                    <div class="input-icon right">
+                                                        <i class="fa"></i>
+                                                        <input type="text" class="form-control" name="url"> </div>
+                                                    <span class="help-block"> e.g: http://www.demo.com or http://demo.com </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3">Number
+                                                    <span class="required" aria-required="true"> * </span>
+                                                </label>
+                                                <div class="col-md-4">
+                                                    <div class="input-icon right">
+                                                        <i class="fa"></i>
+                                                        <input type="text" class="form-control" name="number"> </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3">Digits
+                                                    <span class="required" aria-required="true"> * </span>
+                                                </label>
+                                                <div class="col-md-4">
+                                                    <div class="input-icon right">
+                                                        <i class="fa"></i>
+                                                        <input type="text" class="form-control" name="digits"> </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3">Credit Card
+                                                    <span class="required" aria-required="true"> * </span>
+                                                </label>
+                                                <div class="col-md-4">
+                                                    <div class="input-icon right">
+                                                        <i class="fa"></i>
+                                                        <input type="text" class="form-control" name="creditcard"> </div>
+                                                    <span class="help-block"> e.g: 5500 0000 0000 0004 </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions">
+                                            <div class="row">
+                                                <div class="col-md-offset-3 col-md-9">
+                                                    <button type="submit" class="btn green">Submit</button>
+                                                    <button type="button" class="btn default">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                        <!--This model use for add or edit data-->
+                                        <div id="todo-members-modal" class="modal fade" role="dialog" aria-labelledby="myModalLabel10"
+                                             aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                        <h4 class="modal-title">เพิ่มคำตอบ</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="#" class="form-horizontal" role="form">
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-3">วิธีการแก้ปัญหา:
+                                                                        </label>
+                                                                        <div class="col-md-9">
+                                                                            <textarea name="" class="form-control" id cols="50" rows="5"
+                                                                                      style="width:100%;resize: none" placeholder=".........."></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-3">สาเหตุของปัญหา:
+                                                                        </label>
+                                                                        <div class="col-md-9">
+                                                                            <textarea name="" class="form-control" id cols="50" rows="5"
+                                                                                      style="width:100%;resize: none" placeholder=".........."></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn default" data-dismiss="modal" aria-hidden="true">Close</button>
+                                                        <button class="btn green" data-dismiss="modal">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                           // swal({
+                                            //     title: "Please wait for a while",
+                                            //     text: "Sending Data..",
+                                            //     timer: 100000000,
+                                            //     showConfirmButton: false,
+                                            //     html: true
+                                            // });
+
+
+                                            //use for add data into DB
+                                                $http({
+                                                    method: 'POST',
+                                                    url: '/',
+                                                    data: _data,
+                                                    config: '',
+                                                    headers: {
+                                                        'Content-Type': 'application/x-www-form-urlencoded'
+                                                    }
+                                                }).then(function successCallback(response) {
+                                                    console.log(response.status + ' ' + response.statusText);
+                                                    swal({
+                                                        title: "Submit Data Success",
+                                                        text: "Success Message",
+                                                        timer: 2000,
+                                                        showConfirmButton: false,
+                                                        html: true
+                                                    });
+                                                    setTimeout(function() {
+                                                        location.href = "/";
+                                                    }, 2000);
+                                                }, function errorCallback(response) {
+                                                    swal({
+                                                        title: "Submit Data Error",
+                                                        text: "Error Message",
+                                                        timer: 2000,
+                                                        showConfirmButton: false,
+                                                        html: true
+                                                    });
+                                                    console.log(response.status + ' ' + response.statusText);
+                                                });
+
+                                                       var url = "http://localhost:3000/users/get/" + index;
+                                                        $http.get(url).success(function (data) {
+                                                            console.log("Index is : " + index);
+                                                            console.log(data);
+                                                            $scope.editData = data;
+                                                            $scope.currentIndex = index;
+                                                        }).error(function (err) {
+                                                            console.log(err);
+                                                        });
+
+                                                         var url = "http://localhost:3000/users/add";
+
+                                                                if ($scope.currentIndex > -1) {
+                                                                    url = "http://localhost:3000/users/update";
+                                                                    $scope.editData.index = $scope.currentIndex;
+                                                                }
+
+                                                                $http.post(url, $scope.editData).success(function (data) {
+                                                                    //alert(data);
+                                                                    $scope.loadData();
+                                                                }).error(function (err) {
+                                                                    console.log(err);
+                                                                });
+
+                                                                $scope.editData = {name: "", phone: ""};
+
+
+                                                                //use for appendDiv-------------------------------------------------------------------------------------------------------------------------
+                                                                function appendDiv(data) {
+                                                                  return newChild = $("<div class='col-md-3 scroll'  ng-controller='homeController' >" +
+                                                                    "<div class='panel panel-warning'>" +
+                                                                    "<div class='panel-body'>" +
+                                                                    "<ul class='list-group'>" +
+                                                                    "<button type='button'  value='text' ng-click='getDataById($index)'  class='list-group-item list-group-item-info'>" +
+                                                                    data +
+                                                                    "<span class=' badge badge-default fa fa-chevron-right'></span>" +
+                                                                    "</button>" +
+                                                                    "</ul>" +
+                                                                    "<a class='todo-add-button' href='#todo-members-modal' data-toggle = 'modal' >" +
+                                                                    "+ </a>" +
+                                                                    "</div>" +
+                                                                    "</div>" +
+                                                                    "</div>");
+                                                                }
+                                                                //-------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                function appendData(data) {
+                                                                  return newChild = $("<button type='button'  value='text' onclick='addBox()' ng-click='getDataById($index)'  class='list-group-item list-group-item-info'>" +
+                                                                    data +
+                                                                    "<span class=' badge badge-default fa fa-chevron-right'></span>" +
+                                                                    "</button>");
+                                                                }
+
+                                                                //use for add only box---------------------------------------
+                                                                function addBox() {
+                                                                  if (box < 4) {
+                                                                    appendDiv();
+                                                                    $(".parent").append(newChild);
+                                                                    newChild.hide().show('slow');
+                                                                    box++;
+                                                                  }
+                                                                  else if (box >= 4) {
+                                                                    appendDiv();
+                                                                    $(".parent").children().eq(0).remove();
+                                                                    $(".parent").append(newChild).hide().show('slow');
+                                                                    //console.log(box);
+                                                                    box++;
+                                                                  }
+                                                                }
+                                                                //----------------------------------------------------------
+
+                                                                //use for put dataBox---------------------------------------
+                                                                function dataBox(reciveData) {
+                                                                  var childData = reciveData;
+                                                                  for (var i = 0; i < childData.length; i++) {
+                                                                    appendDiv("ขอสาย");
+                                                                    $(".parent").append(newChild);
+
+                                                                    console.log(childData[i].text);
+                                                                  }
+                                                                };
+                                                                //----------------------------------------------------------
+
+                                                                /*//use for addData from API onto child ul------------------------------------------------------------------------------------------------------
+                                                                var addData = function(reciveData){
+                                                                  var childData = reciveData;
+                                                                  for (var i = 0; i < childData.length; i++) {
+                                                                    $("parent2").append( "<ul class='list-group'>" +
+                                                                      "<button type='button'  value='text' onclick='addBox()' ng-click='getDataById($index)'  class='list-group-item list-group-item-info'>" +
+                                                                      childData[i].text +
+                                                                      "<span class=' badge badge-default fa fa-chevron-right'></span>" +
+                                                                      "</button>" +
+                                                                      "</ul>");
+                                                                  }
+                                                                };
+                                                                //--------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                //use for put Data to div --------------------------------------------------------------------------------------------------------------
+                                                                var Box = function(){
+                                                                  return newChild = $("<div class='col-md-3 scroll'  ng-controller='homeController' >" +
+                                                                    "<div class='panel panel-warning'>" +
+                                                                    "<div class='panel-body'>" +
+                                                                    addData() +
+                                                                    "<a class='todo-add-button' href='#todo-members-modal' data-toggle = 'modal' >" +
+                                                                    "+ </a>" +
+                                                                    "</div>" +
+                                                                    "</div>" +
+                                                                    "</div>");
+                                                                };
+                                                                //--------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                //--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                var addBox = function(){
+                                                                  if (box < 4) {
+                                                                    $(".parent").append(Box());
+                                                                    Box().hide().show('slow');
+                                                                    box++;
+                                                                  }
+                                                                  else if (box >= 4) {
+                                                                    $(".parent").children().eq(0).remove();
+                                                                    $(".parent").append(Box()).hide().show('slow');
+                                                                    //console.log(box);
+                                                                    box++;
+                                                                  }
+                                                                };*/
+                                                                //--------------------------------------------------------------------------------------------------------------------------------------------

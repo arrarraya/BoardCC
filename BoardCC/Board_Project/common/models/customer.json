@@ -1,0 +1,56 @@
+{
+  "name": "customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "string"
+    },
+    "solution": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "accessPoint": {
+      "type": "string"
+    },
+    "basicResolve": {
+      "type": "string"
+    },
+    "moreInfo": {
+      "type": "string"
+    },
+    "premium": {
+      "type": "string"
+    },
+    "retail": {
+      "type": "string"
+    },
+    "userRec": {
+      "type": "string"
+    },
+    "customerName": {
+      "type": "string",
+      "required": false
+    },
+    "tel": {
+      "type": "string",
+      "required": false
+    },
+    "room": {
+      "type": "string",
+      "required": false
+    },
+    "editDate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

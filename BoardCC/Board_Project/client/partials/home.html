@@ -1,0 +1,374 @@
+<!--Start Header-->
+<div ng-controller='formController'>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://localhost:3800/#/">Board Call Center</a>
+      </div>
+      <form id="form_search" name="formSearch" class="form-horizontal" ng-submit="search()">
+        <div class="right">
+          <label><span style="color:white">กรุณาป้อนเบอร์โทรศัพท์ลูกค้า</span></label>&nbsp;&nbsp;
+          <input name="searchCustomer" numbers-only type="text" id="inputSearch" ng-model="searchCustomer" placeholder="โปรดกรอกเบอร์โทรศัพท์" required="true" />&nbsp;&nbsp;
+          <button  class="btn btn-primary" form="form_search" type="submit">
+            <span class="glyphicon glyphicon-search"></span> ค้นหา
+          </button>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <!--End Header-->
+  <div class="ui container-fluid" id="div-editbox" style="display : none;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="alert alert-success" ng-show="Show.boolean">
+          <strong><span class="glyphicon glyphicon-ok-sign"></span></strong><label>&nbsp; พบข้อมูลการแจ้งปัญหา สำหรับเบอร์โทรศัพท์หมายเลข "{{Show.tel}}"</label>
+        </div>
+        <div class="alert alert-warning" ng-hide="Show.boolean">
+          <strong><span class="glyphicon glyphicon-info-sign"></span></strong><label>&nbsp; เบอร์โทรศัพท์หมายเลข "{{Show.tel}}" ยังไม่เคยแจ้งปัญหา</label>
+          <ol>
+            <li>ป้อนข้อมูลลูกค้าเอง</li>
+            <li>ค้นหาเบอร์โทรศัพท์อื่นๆ</li>
+          </ol>
+        </div>
+        <!-- BEGIN PORTLET-->
+        <div class="portlet light form-fit " ng-show="Show.boolean">
+          <div class="portlet-title">
+            <div class="caption">
+              <span class="caption-subject font-yellow bold uppercase">ข้อมูลลูกค้า</span>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+            <tr>
+              <th>No.</th>
+              <th>ห้อง</th>
+              <th>ชื่อลูกค้า</th>
+              <th>เบอร์โทรศัพท์</th>
+              <th>เริ่มกระทู้</th>
+              <th>ชื่อสถานที่ (Premium)</th>
+              <th>ชื่อสถานที่ (Retail)</th>
+              <th>Access Point</th>
+              <th>ข้อมูลเพิ่มเติม</th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="d in Data">
+              <td>{{$index+1}}</td>
+              <td>{{d.room}}</td>
+              <td>{{d.customerName}}</td>
+              <td>{{d.tel}}</td>
+              <td>{{d.date}}</td>
+              <td>{{d.premium}}</td>
+              <td>{{d.retail}}</td>
+              <td>{{d.accessPoint}}</td>
+              <td style="width:250px;">{{d.moreInfo}}</td>
+              <td>
+                <button class="btn btn-success" ng-click="editData($index)" href="#edit-field" data-toggle="modal">Edit
+                </button>
+                &nbsp;&nbsp;
+                <button class="btn btn-danger" ng-click="deleteData($index)">Delete</button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <button class="btn" style="margin-left: 10px;margin-bottom: 10px;" ng-click="cancelData()">Back
+          </button>
+        </div>
+        <!-- ส่วนPopupปุ่มEdit -->
+        <div id="edit-field" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">แก้ไขข้อมูล</h4>
+              </div>
+              <div class="modal-body">
+                <form id="form_edit" class="form-horizontal" ng-submit="editSubmit($index)">
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ห้อง
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-9">
+                      <input type="text" numbers-only name="roomEdit" class="form-control"
+                             ng-model="Edit.room" required/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ชื่อลูกค้า
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-9">
+                      <input type="text" name="customerNameEdit" class="form-control"
+                             ng-model="Edit.customerName"
+                             required/></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">โทรศัพท์ลูกค้า
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-9">
+                      <input name="telEdit" numbers-only type="text" class="form-control" ng-model="Edit.tel"
+                             required/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">เริ่มกระทู้</label>
+                    <div class="col-md-9">
+                      <div class="input-group date form_datetime" data-date="2016-9-7T15:25:00Z">
+                        <input type="text" name="dateEdit" size="16" readonly="" class="form-control"
+                               ng-model="Edit.date">
+                        <span class="input-group-btn">
+                                            <button class="btn default date-set" type="button">
+                                                <i class="fa fa-calendar"></i>
+                                            </button>
+                                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ชื่อสถานที่ (Premium)
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-9">
+                      <input type="text" name="premiumEdit" class="form-control" ng-model="Edit.premium"
+                             required/></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ชื่อสถานที่ (Retail)
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-9">
+                      <input type="text" name="retailEdit" class="form-control" ng-model="Edit.retail"
+                             required/></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Access Point
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-9">
+                      <input type="text" numbers-only name="accessPointEdit" class="form-control"
+                             ng-model="Edit.accessPoint"
+                             required/></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ข้อมูลเพิ่มเติม
+                    </label>
+                    <div class="col-md-9">
+                                    <textarea name="moreInfoEdit" class="form-control autosizeme"
+                                              style="height: 200px; resize: none;"
+                                              placeholder="กรอกข้อมูลเพิ่มเติม......"
+                                              ng-model="Edit.moreInfo"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn default" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn green" form="form_edit" type="submit">Submit</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="div-datatable">
+    <!--Start Content1 Form Submit-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- BEGIN VALIDATION STATES-->
+          <div class="portlet light portlet-fit portlet-form ">
+            <div class="portlet-title">
+              <div class="caption">
+                <span class="caption-subject font-yellow bold uppercase">แบบฟอร์มบันทึกรายละเอียดปัญหาของลูกค้า</span>
+              </div>
+            </div>
+            <div class="portlet-body">
+
+              <!-- BEGIN FORM-->
+              <form id="form_sample_2" class="form-horizontal" ng-submit="submit()">
+                <div class="form-body">
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ห้อง
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-8">
+                      <input type="text" numbers-only name="room" class="form-control" ng-model="room" required/></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ชื่อลูกค้า
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-8">
+                      <input type="text" name="customerName" class="form-control" ng-model="customerName" required/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">โทรศัพท์ลูกค้า
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-8">
+                      <input name="tel" numbers-only type="text" class="form-control" ng-model="tel" required/></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">เริ่มกระทู้</label>
+                    <div class="col-md-8">
+                      <div class="input-group date form_datetime" data-date="2016-9-7T15:25:00Z">
+                        <input type="text" name="date" ng-model="date" size="16" readonly="" class="form-control"
+                               ng-model="Edit.date">
+                        <span class="input-group-btn">
+                            <button class="btn default date-set" type="button">
+                              <i class="fa fa-calendar"></i>
+                            </button>
+                          </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ชื่อสถานที่ (Premium)
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-8">
+                      <input type="text" name="premium" class="form-control" ng-model="premium" required/></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">ชื่อสถานที่ (Retail)
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-8">
+                      <input type="text" name="retail" class="form-control" ng-model="retail" required/></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Access Point
+                      <span class="required"> * </span>
+                    </label>
+                    <div class="col-md-8">
+                      <input type="text" name="accessPoint" class="form-control" ng-model="accessPoint" required/></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- END VALIDATION STATES-->
+        </div>
+
+
+        <div class="col-md-6">
+          <!-- BEGIN PORTLET-->
+          <div class="portlet light form-fit ">
+            <div class="portlet-title">
+              <div class="caption">
+                <span class="caption-subject font-yellow bold uppercase">ข้อมูลเพิ่มเติม</span>
+              </div>
+            </div>
+            <div class="portlet-body form">
+              <div class="form-horizontal form-bordered">
+
+                <div class="form-group last">
+                  <div class="col-md-12">
+                    <textarea id="textarea1" class="form-control autosizeme" style="height: 325px; resize: none;"
+                              placeholder="กรอกข้อมูลเพิ่มเติม......" ng-model="more"></textarea>
+                  </div>
+                  <div class="form-actions">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <button type="reset" class="btn red-mint" form="form_sample_2" value="Clear"
+                                onclick="javascript:eraseText();">
+                          Clear
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END PORTLET-->
+        </div>
+      </div>
+      </form>
+      <!--End Content1 Form Submit-->
+
+      <!--Start Content2 Form Problem-->
+      <div class="container-fluid" ng-controller="homeController" id="homeController" ng-init="getDataById()">
+        <div class="row">
+          <div class="portlet box purple-sharp">
+            <div class="portlet-title">
+              <div class="caption" ng-model="question" id="link_question">
+                Path : 1
+              </div>
+              <div class="tools">
+                <a class="btn btn-success btn-xs" href='#reset' style="margin-bottom: 7px;">Reset</a>
+                <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+              </div>
+            </div>
+            <div class="portlet-body">
+              <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>
+                    <div class="parent" style="height: 400px;">
+                      <!--This will get data from questionController.js-->
+                    </div>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+              <button type="submit" class="btn yellow-saffron" form="form_sample_2">
+                <i class="fa fa-check"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Content2 Form Problem-->
+
+      <!--This model use for add or edit data-->
+      <div id="todo-members-modal" class="modal fade" role="dialog" aria-labelledby="myModalLabel10"
+           aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title">เพิ่มคำตอบ</h4>
+            </div>
+            <div class="modal-body">
+              <form action="#" class="form-horizontal" role="form">
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="control-label col-md-3">คำตอบ:
+                      </label>
+                      <div class="col-md-9">
+                        <textarea name="" class="form-control" id cols="50" rows="5" style="width:100%;resize: none"
+                                  placeholder=""></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn default" data-dismiss="modal" aria-hidden="true">Close</button>
+              <button class="btn green" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--End model-->
+    </div>
+    <!--End Content2 Form Problem-->
+  </div>
+</div>
+<!--Start box Jquery-->
+<script src="box.js"></script>
+<!--End box Jquery-->

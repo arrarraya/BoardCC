@@ -1,0 +1,527 @@
+﻿
+{
+    "_id" : 2,
+    "parent" : 1,
+    "name" : "A1",
+    "text" : "Log in ไม่ได้",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 3,
+    "parent" : 1,
+    "name" : "A2",
+    "text" : "ขอสาย",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+{
+    "_id" : 4,
+    "parent" : 1,
+    "name" : "A3",
+    "text" : "เข้าไม่ได้",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 5,
+    "parent" : 1,
+    "name" : "A4",
+    "text" : "เชื่อมต่อไม่ได้",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 6,
+    "parent" : 1,
+    "name" : "A5",
+    "text" : "ใช้งานครั้งแรก",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 7,
+    "parent" : 1,
+    "name" : "A6",
+    "text" : "ดูหนังไม่ได้",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 8,
+    "parent" : 1,
+    "name" : "A7",
+    "text" : "ตกใจสีเหลือง",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+{
+    "_id" : 9,
+    "parent" : 1,
+    "name" : "A8",
+    "text" : "ติดตั้ง หรือ วางระบบ",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 10,
+    "parent" : 1,
+    "name" : "A9",
+    "text" : "ถามทาง",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 11,
+    "parent" : 1,
+    "name" : "A10",
+    "text" : "เนตช้า",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 12,
+    "parent" : 1,
+    "name" : "A11",
+    "text" : "บัตร Internet  /  Username / Password",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 13,
+    "parent" : 1,
+    "name" : "A12",
+    "text" : "ไม่เจอสัญญาณ",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 14,
+    "parent" : 1,
+    "name" : "A13",
+    "text" : "หลุดบ่อย",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 19,
+    "parent" : 1,
+    "name" : "A18",
+    "text" : "เล่นเกมไม่ได้",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 20,
+    "parent" : 1,
+    "name" : "A19",
+    "text" : "SW Only",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 21,
+    "parent" : 1,
+    "name" : "A20",
+    "text" : "ไม่เกี่ยวกับ SZ",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 22,
+    "parent" : 1,
+    "name" : "A21",
+    "text" : "โทรออก",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 23,
+    "parent" : 1,
+    "name" : "A22",
+    "text" : "TSD",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 24.0,
+    "parent" : 3.0,
+    "name" : "Q",
+    "text" : "ขอสาย",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 25.0,
+    "parent" : 3.0,
+    "name" : "I",
+    "text" : "",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 26.0,
+    "parent" : 25.0,
+    "name" : "A1",
+    "text" : "พนักงาน Call",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 27.0,
+    "parent" : 25.0,
+    "name" : "A2",
+    "text" : "ฝ่ายบัญชี",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+{
+    "_id" : 28.0,
+    "parent" : 25.0,
+    "name" : "A3",
+    "text" : "ฝ่ายบุคคล",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 29.0,
+    "parent" : 25.0,
+    "name" : "A4",
+    "text" : "ฝ่ายขาย",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 30.0,
+    "parent" : 25.0,
+    "name" : "A5",
+    "text" : "หัวหน้า / เจ้าของบริษัท",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 31.0,
+    "parent" : 25.0,
+    "name" : "A6",
+    "text" : "ฝ่ายเทคนิค / ช่าง",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 32.0,
+    "parent" : 26.0,
+    "name" : "Q",
+    "text" : "สอบถามรายละเอียดเบื้องต้น",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 33.0,
+    "parent" : 26.0,
+    "name" : "I",
+    "text" : "",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 34.0,
+    "parent" : 32.0,
+    "name" : "A1",
+    "text" : "ติดต่อใคร/ติดต่อเรื่องอะไร",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 35.0,
+    "parent" : 34.0,
+    "name" : "Q",
+    "text" : "โอนสายให้พนักงานโดยตรงได้ไหม",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+{
+    "_id" : 36.0,
+    "parent" : 34.0,
+    "name" : "I",
+    "text" : "",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 37.0,
+    "parent" : 35.0,
+    "name" : "A2",
+    "text" : "โอนได้",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "ทำการโอนสายให้พนักงาน",
+    "cause" : "ขอสายพนักงาน Call Center ท่านอื่น",
+    "path" : ""
+}
+
+
+{
+    "_id" : 38.0,
+    "parent" : 35.0,
+    "name" : "A2",
+    "text" : "โอนไม่ได้",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "แจ้งพนักงานท่านนั้นติดต่อกลับหาลูกค้าโดยเร็วที่สุด",
+    "cause" : "ขอสายพนักงาน Call Center ท่านอื่น",
+    "path" : ""
+}
+
+
+{
+    "_id" : 15,
+    "parent" : 1,
+    "name" : "A14",
+    "text" : "กากบาท",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 16,
+    "parent" : 1,
+    "name" : "A15",
+    "text" : "กล้องวงจรปิด",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 17,
+    "parent" : 1,
+    "name" : "A16",
+    "text" : "VPN",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 18,
+    "parent" : 1,
+    "name" : "A17",
+    "text" : "Smart TV / PS4",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}
+
+
+{
+    "_id" : 1,
+    "parent" : null,
+    "name" : "Q",
+    "text" : "สวัสดีครับ ไม่ทราบว่าวันนี้มีปัญหาใดให้ผมช่วยเหลือครับ",
+    "create_date" : "",
+    "edit_date" : "",
+    "user_rec" : "",
+    "solution" : "",
+    "cause" : "",
+    "path" : ""
+}

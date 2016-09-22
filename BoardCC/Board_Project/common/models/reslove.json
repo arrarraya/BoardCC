@@ -1,0 +1,50 @@
+{
+  "name": "reslove",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string"
+    },
+    "create_date": {
+      "type": "date"
+    },
+    "edit_date": {
+      "type": "date"
+    },
+    "user_rec": {
+      "type": "string"
+    },
+    "solution": {
+      "type": "string"
+    },
+    "cause": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "parent": {
+      "type": "number",
+      "required": true
+    },
+    "_id": {
+      "type": "number",
+      "id": true,
+      "required": false,
+      "index": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
